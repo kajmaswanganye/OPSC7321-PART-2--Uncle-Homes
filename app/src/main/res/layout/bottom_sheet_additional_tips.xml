@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image view for displaying additional tips icon -->
+        <ImageView
+            android:id="@+id/idIVTipsIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/tips_icon"
+            android:contentDescription="Additional tips icon" />
+
+        <!-- Text view for displaying additional tips title -->
+        <TextView
+            android:id="@+id/idTVTipsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="10dp"
+            android:text="Additional Tips for Success"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for displaying tips overview -->
+        <TextView
+            android:id="@+id/idTVTipsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTipsTitle"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="5dp"
+            android:text="Enhance your service delivery with these additional tips to maximize customer satisfaction and grow your business."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for communication tips -->
+        <TextView
+            android:id="@+id/idTVCommunicationTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTipsDescription"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="10dp"
+            android:text="Communication Tips"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for communication tips details -->
+        <TextView
+            android:id="@+id/idTVCommunicationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCommunicationTips"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="5dp"
+            android:text="Always communicate clearly and promptly with your customers to ensure their satisfaction and build trust."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for punctuality tips -->
+        <TextView
+            android:id="@+id/idTVPunctualityTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCommunicationDetails"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="10dp"
+            android:text="Punctuality Matters"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for punctuality tips details -->
+        <TextView
+            android:id="@+id/idTVPunctualityDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPunctualityTips"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="5dp"
+            android:text="Being on time shows professionalism and helps you create a positive impression with your customers."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for quality tips -->
+        <TextView
+            android:id="@+id/idTVQualityTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPunctualityDetails"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="10dp"
+            android:text="Focus on Quality"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for quality tips details -->
+        <TextView
+            android:id="@+id/idTVQualityDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVQualityTips"
+            android:layout_toEndOf="@id/idIVTipsIcon"
+            android:layout_marginTop="5dp"
+            android:text="Deliver top-notch service to ensure customer satisfaction and increase your chances of repeat business."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Button for dismissing the tips card -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVQualityDetails"
+            android:layout_margin="10dp"
+            android:text="Dismiss"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

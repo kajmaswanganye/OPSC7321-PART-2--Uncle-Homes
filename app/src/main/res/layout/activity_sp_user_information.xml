@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/oxanium_extra_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Tell us more..."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Experience Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Experience (years)" />
+
+            <Spinner
+                android:id="@+id/spinnerExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/experience_options" />
+
+            <!-- Certifications/Licenses -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Certifications/Licenses" />
+
+            <EditText
+                android:id="@+id/editCertifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter certifications/licenses" />
+
+            <!-- Service Area -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Service Area" />
+
+            <EditText
+                android:id="@+id/editServiceArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter geographic area (e.g., cities or zip codes)" />
+
+            <!-- Availability -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Availability and Hours" />
+
+            <EditText
+                android:id="@+id/editAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter available days/hours" />
+
+            <!-- Equipment and Supplies RadioGroup -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Do you provide equipment and supplies?" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupEquipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioEquipmentYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/oxanium_regular"
+                    android:textColor="@color/black"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioEquipmentNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/oxanium_regular"
+                    android:textColor="@color/black"
+                    android:text="No" />
+            </RadioGroup>
+
+            <!-- Pricing Structure -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Pricing Structure" />
+
+            <!-- Insurance and Warranties RadioGroup -->
+
+            <EditText
+                android:id="@+id/editPricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter pricing model (e.g., Hourly rate)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Do you offer insurance or guarantees?" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold">
+
+                <RadioButton
+                    android:id="@+id/radioInsuranceYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/oxanium_regular"
+                    android:textColor="@color/black"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioInsuranceNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/oxanium_regular"
+                    android:textColor="@color/black"
+                    android:text="No" />
+            </RadioGroup>
+
+            <!-- Specialization -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Specialization" />
+
+            <EditText
+                android:id="@+id/editSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter specific tasks you specialize in" />
+
+            <!-- Client Interaction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:text="Client Interaction Method" />
+
+            <EditText
+                android:id="@+id/editClientInteraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_bold"
+                android:hint="Enter communication method (Phone, Email)" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="157dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oxanium_regular"
+                android:backgroundTint="@color/white"
+                android:text="Submit"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

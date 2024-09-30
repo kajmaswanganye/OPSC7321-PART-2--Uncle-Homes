@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--permissions for internet-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Uncle_Homes"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".authentication.SignupActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".onboarding.LearnActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".onboarding.SecurityDocumentActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".users.ServiceProviderInformation"
+            android:exported="true"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ProfileActivity"
+                   android:exported="true"/>
+
+        <activity android:name=".TasksActivity"
+                  android:exported="true"/>
+
+        <activity android:name=".JobsActivity"
+                   android:exported="true"/>
+
+        <activity android:name=".SupportActivity"
+                  android:exported="true"/>
+
+        <activity android:name=".SettingsActivity"
+        android:exported="true"/>
+
+        <activity android:name=".onboarding.SurveyActivity"
+            android:exported="true"/>
+
+        <activity android:name=".WalletActivity"
+            android:exported="true"/>
+
+        <activity android:name=".EditInformationSPActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AnalyticsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".LegalActivity"
+            android:exported="true"/>
+
+        <activity android:name=".CheckOutCL"
+            android:exported="true"/>
+
+        <activity android:name=".FinishOrderCL"
+            android:exported="true"/>
+
+        <activity android:name=".HelpCL"
+            android:exported="true"/>
+
+        <activity android:name=".HistoryCL"
+            android:exported="true"/>
+
+        <activity android:name=".MainCL"
+            android:exported="true"/>
+
+        <activity android:name=".OrderServiceCL"
+            android:exported="true"/>
+
+        <activity android:name=".ProfileCL"
+            android:exported="true"/>
+
+        <activity android:name=".PublishOrderCL"
+            android:exported="true"/>
+
+        <activity android:name=".InductionSlider"
+            android:exported="true"/>
+
+        <activity android:name=".AddCardActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AddCashActivity"
+            android:exported="true"/>
+
+        <activity android:name=".WalletCL"
+            android:exported="true"/>
+
+        <activity android:name=".AnalyticsCL"
+            android:exported="true"/>
+
+        <activity android:name=".EditInformationCLActivity"
+            android:exported="true"/>
+
+        <activity android:name=".TrackingActivity"
+            android:exported="true"/>
+
+        <activity android:name=".BookCL"
+            android:exported="true"/>
+
+        <activity android:name=".SettingsCL"
+            android:exported="true"/>
+
+        <activity android:name=".PostDetailsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".CompareQuotesActivity"
+            android:exported="true"/>
+
+        <activity android:name=".SupportCL"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".IntroSlider"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!--  Other activities can be declared similarly without intent filters  -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api_key"/>
+
+
+    </application>
+
+</manifest>

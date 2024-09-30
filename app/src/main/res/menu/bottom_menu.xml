@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/jobs"
+        android:icon="@drawable/jobs_icon"
+        android:title="Jobs" />
+
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/support_icon"
+        android:title="Support" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings" />
+
+
+</menu>

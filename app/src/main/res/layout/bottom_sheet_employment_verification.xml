@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image view for displaying employment verification icon -->
+        <ImageView
+            android:id="@+id/idIVVerificationIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/verify_icon"
+            android:contentDescription="Employment verification icon" />
+
+        <!-- Text view for displaying verification title -->
+        <TextView
+            android:id="@+id/idTVVerificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="10dp"
+            android:text="Employment Verification Process"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for displaying verification overview -->
+        <TextView
+            android:id="@+id/idTVVerificationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVVerificationTitle"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_toRightOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="5dp"
+            android:text="To get verified as a service provider, submit the required documents and follow the verification steps."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for required documents information -->
+        <TextView
+            android:id="@+id/idTVRequiredDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVVerificationDescription"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="10dp"
+            android:text="Required Documents"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for listing required documents -->
+        <TextView
+            android:id="@+id/idTVDocumentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVRequiredDocuments"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="5dp"
+            android:text="Upload a valid ID, proof of residence, and professional certifications (if applicable)."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for verification status information -->
+        <TextView
+            android:id="@+id/idTVVerificationStatusInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVDocumentList"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="10dp"
+            android:text="Track Verification Status"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for verification tracking details -->
+        <TextView
+            android:id="@+id/idTVVerificationTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVVerificationStatusInfo"
+            android:layout_toEndOf="@id/idIVVerificationIcon"
+            android:layout_marginTop="5dp"
+            android:text="You can monitor your verification status within the app under the 'User Authentication' in settings."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Button for dismissing the verification card -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVVerificationTracking"
+            android:layout_margin="10dp"
+            android:text="Dismiss"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

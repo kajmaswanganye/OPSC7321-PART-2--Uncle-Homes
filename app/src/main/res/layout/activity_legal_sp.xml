@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="@color/glossy_green"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLegal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Legal Information"
+            android:fontFamily="@font/oxanium_extra_bold"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Legal Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Applications and the Law"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provided by Schindlers Attorneys"
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Alec Veitch and Jonathan Salant"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topics: Consumer Protection | Intellectual Property Law | Technology Law"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24 Mar 2016"
+            android:textSize="12sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Legal Article Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The cyber-industry of mobile application development for smartphones and tablets Apps is an area that has gained exponential growth over recent years..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section Headers and Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applicable Legislation"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There is a variety of legislation that can apply to a mobile App at any one time..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CPA Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Consumer Protection Act"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The CPA has been enacted to promote and advance the social and economic welfare of consumers in South Africa..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ECTA Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electronic Communications and Transactions Act"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-commerce law has been codified in the ECTA. The ECTA facilitates and regulates electronic communications and transactions..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Copyright Act Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright Act"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright law is of particular importance to ensure the developer maintains ownership of their Intellectual Property..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- POPI Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protection of Personal Information Act"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When a person signs up for a mobile App, and personal information is given, it is crucial that the information which is provided is limited to that which is necessary for its specific purpose..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Conclusion -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conclusion"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It is apparent that mobile Apps and the shift into an e-commerce society has created boundless opportunity for the creation of successful businesses..."
+            android:textSize="16sp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Disclaimer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(This article is provided for informational purposes only and not for the purpose of providing legal advice. For more information on the topic, please contact the author/s or the relevant provider.)"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/glossy_red"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

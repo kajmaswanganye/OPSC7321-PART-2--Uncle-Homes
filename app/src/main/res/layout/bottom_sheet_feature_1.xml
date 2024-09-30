@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Painters wanted in Sandton"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_extra_bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hiring Multiple Candidates"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <!-- Image view for feature 1 -->
+        <ImageView
+            android:id="@+id/feature1IV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/painter_feature1"/>
+
+        <TextView
+            android:id="@+id/tvJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="We are looking for experienced painters to join our team. Candidates should have:\n\n- At least 2 years of experience in residential or commercial painting.\n- Proficiency in various painting techniques including rolling, brushing, and spraying.\n- Experience with different types of paint finishes such as matte, satin, and gloss.\n- Ability to work with various materials and surfaces, including drywall, wood, and metal.\n- Good understanding of color mixing and matching.\n- Attention to detail and strong work ethic.\n\nIf you have a passion for painting and meet the above criteria, apply now!"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Dismiss"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

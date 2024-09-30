@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title for Notification Preferences -->
+        <TextView
+            android:id="@+id/idTVNotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Notification Preferences"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- Checkbox for job notifications -->
+        <CheckBox
+            android:id="@+id/idCBJobNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVNotificationTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Only Job Notifications"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- Checkbox for advertisement notifications -->
+        <CheckBox
+            android:id="@+id/idCBAdvertisementNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idCBJobNotifications"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Allow Advertisement Notifications"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- Checkbox for alerts on certain job advertisements -->
+        <CheckBox
+            android:id="@+id/idCBAlertForSpecificJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idCBAdvertisementNotifications"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Alert Me When Certain Job is Advertised"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- Button for applying notification changes -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idCBAlertForSpecificJob"
+            android:layout_margin="10dp"
+            android:text="Apply Changes"
+            android:textAllCaps="false"
+            android:fontFamily="@font/oxanium_bold"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

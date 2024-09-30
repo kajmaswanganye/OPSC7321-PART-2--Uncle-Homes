@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Uncle_Homes</string>
+
+    <!-- Experience Options -->
+    <string-array name="experience_options">
+        <item>Less than 1 year</item>
+        <item>1–3 years</item>
+        <item>3–5 years</item>
+        <item>5+ years</item>
+    </string-array>
+
+    <!--Map Api key-->
+    <string name="my_map_api_key">AIzaSyBkjm9v9QusEBAGZ9QHA2se8VpN676LV7k</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>IsiZulu </item>
+        <item>isiXhosa </item>
+        <item>Afrikaans</item>
+        <item>Setswana </item>
+    </string-array>
+
+    <string-array name="service_types">
+        <item>Cleaner</item>
+        <item>Gardener</item>
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Pool Cleaning</item>
+        <item>Tree Trimming</item>
+        <item>Painting</item>
+        <item>Pet Care</item>
+        <item>Carpentry</item>
+        <item>Pest Control</item>
+    </string-array>
+
+</resources>

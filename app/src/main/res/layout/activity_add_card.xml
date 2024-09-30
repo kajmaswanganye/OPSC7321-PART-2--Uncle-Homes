@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add cards"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/oxanium_extra_bold"
+            android:textSize="40sp"
+            />
+
+    </LinearLayout>
+
+
+    <com.fevziomurtekin.payview.Payview
+        android:id="@+id/payview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBgColor="@color/glossy_green"
+        app:cardFgColor="@color/white"
+        app:cardTextColor="@color/black"
+        app:cardNameHelperText="Enter to card name. Max 25 characters."
+        app:cardCvTextSize="14"
+        app:cardNoTextSize="14"
+        app:cardNumberHelperText="You must enter your 16-digit card number."
+        app:cardYearTextSize="13"
+        app:cardNameTextSize="15"
+        app:cardMonthTextSize="13"
+        app:cardAnimationType="vertical"
+        app:cardBtnPayText="Proceed to pay"
+        app:cardNameHintText="Name on card"
+        app:cardNoHintText="Card Number"
+        app:cardMonthHintText="MM"
+        app:cardYearHintText="YY"
+        app:cardCvHintText="CVV"
+        app:cardCvErrorText="You must enter 3-digit characters"
+        app:cardMonthErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '12'"
+        app:cardYearErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '99'"
+        app:cardExpiredErrorText="Your card has expired. Please enter the usage date correctly."
+        android:layout_below="@id/linearLayout"/>
+
+</RelativeLayout>

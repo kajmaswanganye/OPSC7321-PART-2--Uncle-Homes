@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/glossy_green">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/oxanium_extra_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Survey"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="15dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="#9E9E9E"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="What do you do?"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/oxanium_bold"
+            android:layout_margin="10dp"
+            android:layout_gravity="left" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/selectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your speciality below:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="left"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option1CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image"
+                android:src="@drawable/cleaning_services_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Cleaning Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option2CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image2"
+                android:src="@drawable/gardening_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text2"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Gardening Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button2" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option3CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image3"
+                android:src="@drawable/electrical_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text3"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Electrical Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button3" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option4CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image4"
+                android:src="@drawable/pool_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text4"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Pool Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button4" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option5CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image5"
+                android:src="@drawable/plumbing_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text5"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Plumbing Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button5" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option6CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image6"
+                android:src="@drawable/painting_wall_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text6"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Painting Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button6" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option7CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image7"
+                android:src="@drawable/handyman_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text7"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Handyman Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button7" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option8CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image8"
+                android:src="@drawable/carpentry_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text8"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="2dp"
+                android:text="Carpentry Services"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button8" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option9CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image9"
+                android:src="@drawable/tree_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text9"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:text="Tree Trimming"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button9" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option10CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="20dp">
+
+        <!-- survey_answer.xml -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/answer_image10"
+                android:src="@drawable/brickwork_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_text10"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:text="Brickwork"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/answer_radio_button10" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/nextQuestion"
+                    android:layout_width="157dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:text="Next"
+                    android:fontFamily="@font/oxanium_regular"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+        
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

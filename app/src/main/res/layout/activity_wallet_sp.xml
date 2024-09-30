@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/oxanium_extra_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Wallet"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Balance Overview Section -->
+    <TextView
+        android:id="@+id/tvBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance Overview"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/idToolbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R0.00"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalanceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Pie chart for visual representation of balance -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartBalance"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pie_chart_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalBalance" />
+
+    <!-- Card Management Section -->
+    <TextView
+        android:id="@+id/tvCardManagementLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Management"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/barChartBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardManagementLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add Card Button -->
+    <Button
+        android:id="@+id/btnAddCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Card"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/rvCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Cash Management Section -->
+    <TextView
+        android:id="@+id/tvCashManagementLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash Management"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddCard"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvCashBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash: R 0.00"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCashManagementLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnAddCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Cash"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvCashBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Transaction History Section -->
+    <TextView
+        android:id="@+id/tvTransactionHistoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textStyle="bold"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddCash"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactionHistoryLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

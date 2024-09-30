@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/oxanium_extra_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Uncle Homes"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/glossy_green"
+            android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+       android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:hint="Find professionals"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/oxanium_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/glossy_green">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/glossy_yellow">
+
+            <GridLayout
+                android:id="@+id/grid_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:columnCount="2"
+                android:rowCount="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.007">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBook"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="2dp"
+                    android:background="#404040"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_vertical"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/request_quote_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:text="Book Now"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvTrackTasks"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="2dp"
+                    android:background="#404040"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/track_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:text="Track Tasks"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Services"
+        android:textSize="15sp"
+        android:layout_margin="1dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/oxanium_regular"
+        android:textColor="@color/black"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/glossy_green"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="8"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:rowCount="1">
+
+                <!-- CardView 1 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Painter"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Painter"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/painting_wall_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore1"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 2 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Plumber"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Plumber"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace2"
+                            android:layout_width="match_parent"
+                            android:layout_height="95dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/plumbing_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore2"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 3 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Electrician"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Electrician"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/electrical_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore3"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 4 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Carpenter"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Carpenter"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace4"
+                            android:layout_width="match_parent"
+                            android:layout_height="95dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/carpentry_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore4"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 5 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Pool"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pool Cleaner"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/pool_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore5"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 6 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Builder"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Builder"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/brickwork_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore6"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 7 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="Gardener"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Gardener"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace7"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="@color/white"
+                            android:onClick="OrderPainter"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gardening_icon" />
+
+                        <TextView
+                            android:id="@+id/showMore7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore7"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- CardView 8 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    android:tag="PetCare"
+                    app:cardBackgroundColor="@color/glossy_red"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardTitle8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pet Care"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"/>
+
+                        <ImageButton
+                            android:id="@+id/imageButtonToReplace8"
+                            android:layout_width="match_parent"
+                            android:layout_height="95dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:onClick="OrderPainter"
+                            android:src="@drawable/pawprint" />
+
+                        <TextView
+                            android:id="@+id/showMore8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="ShowMore8"
+                            android:text="Show More"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/oxanium_regular"
+            android:text="Other Features"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/grid_3"
+            android:layout_width="326dp"
+            android:layout_height="143dp"
+            android:layout_alignParentTop="true"
+            android:columnCount="2"
+            android:rowCount="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOther">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/postDetails"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/task_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:layout_margin="15dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Post details"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/getQuoteCompare"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/payments_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="5dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/oxanium_regular"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="10dp"
+                            android:text="Get quotes and compare"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background2"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/client_bottom_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

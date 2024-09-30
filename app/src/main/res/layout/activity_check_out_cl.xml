@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green">
+
+    <View
+        android:id="@+id/topRectangle"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="357dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/oxanium_extra_bold"
+        android:gravity="center_horizontal|center"
+        android:text="Check Out"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/topRectangle"
+        app:layout_constraintTop_toTopOf="@+id/topRectangle"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="380dp"
+        android:layout_height="320dp"
+        app:cardBackgroundColor="@color/glossy_red"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="385dp"
+        android:layout_height="79dp"
+        android:layout_margin="20dp"
+        android:background="#FFFFED"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/oxanium_bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+    <ScrollView
+        android:id="@+id/jobsScrollView"
+        android:layout_width="384dp"
+        android:layout_height="62dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextView">
+
+        <TextView
+            android:id="@+id/jobsTextView"
+            android:layout_width="384dp"
+            android:layout_height="62dp"
+            android:background="#FFFFED"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/oxanium_bold"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="384dp"
+        android:layout_height="62dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFED"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/oxanium_bold"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobsScrollView" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/oxanium_bold"
+        android:onClick="FinishOrder"
+        android:text="Order"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalAmountTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/oxanium_extra_bold"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Wallet"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Balance Overview Section -->
+    <TextView
+        android:id="@+id/tvBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance Overview"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oxanium_regular"
+        app:layout_constraintTop_toBottomOf="@+id/idToolbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R0.00"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oxanium_regular"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalanceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Pie chart for visual representation of balance -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartBalance"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pie_chart_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalBalance" />
+
+    <!-- Card Management Section -->
+    <TextView
+        android:id="@+id/tvCardManagementLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Management"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oxanium_regular"
+        app:layout_constraintTop_toBottomOf="@+id/barChartBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardManagementLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add Card Button -->
+    <Button
+        android:id="@+id/btnAddCard"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:text="Add Card"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/oxanium_regular"
+        app:layout_constraintTop_toBottomOf="@+id/rvCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

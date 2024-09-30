@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image view for displaying training icon or service provider image -->
+        <ImageView
+            android:id="@+id/idIVTrainingIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/training_icon"
+            android:contentDescription="Training icon" />
+
+        <!-- Text view for displaying training title -->
+        <TextView
+            android:id="@+id/idTVTrainingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/idIVTrainingIcon"
+            android:layout_marginTop="10dp"
+            android:text="How to Accept Service Orders"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for displaying training description -->
+        <TextView
+            android:id="@+id/idTVTrainingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTrainingTitle"
+            android:layout_toEndOf="@id/idIVTrainingIcon"
+            android:layout_marginTop="5dp"
+            android:text="Learn the steps to accept customer orders seamlessly and manage bookings effectively."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Text view for customer interaction training -->
+        <TextView
+            android:id="@+id/idTVCustomerInteraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTrainingDescription"
+            android:layout_toEndOf="@id/idIVTrainingIcon"
+            android:layout_marginTop="10dp"
+            android:text="Best Practices for Customer Interaction"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text view for customer interaction tips -->
+        <TextView
+            android:id="@+id/idTVCustomerTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCustomerInteraction"
+            android:layout_toEndOf="@id/idIVTrainingIcon"
+            android:layout_marginTop="5dp"
+            android:text="Communicate clearly, be punctual, and ensure customer satisfaction at every step."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Button for dismissing the training card -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCustomerTips"
+            android:layout_margin="10dp"
+            android:text="Dismiss"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

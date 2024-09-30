@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title for Data Usage Policies -->
+        <TextView
+            android:id="@+id/idTVDataUsageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Data Usage Policies"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- TextView for Policy Information 1 -->
+        <TextView
+            android:id="@+id/idTVPolicyInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVDataUsageTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="We collect data to provide better service and features tailored to your needs."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- TextView for Policy Information 2 -->
+        <TextView
+            android:id="@+id/idTVPolicyInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPolicyInfo1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Data collected includes usage statistics, device information, and personal preferences."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- TextView for Policy Information 3 -->
+        <TextView
+            android:id="@+id/idTVPolicyInfo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPolicyInfo2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="We do not share your data with third parties without your consent."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oxanium_regular" />
+
+        <!-- Button for acknowledging the policies -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPolicyInfo3"
+            android:layout_margin="10dp"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:fontFamily="@font/oxanium_bold"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glossy_green">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/oxanium_bold"
+            android:text="Add Cash"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Input field for adding cash received -->
+    <EditText
+        android:id="@+id/cashInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Cash Received"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oxanium_bold"
+        app:layout_constraintTop_toBottomOf="@id/idToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <!-- Submit button -->
+    <Button
+        android:id="@+id/addCashButton"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:text="Add Cash"
+        app:layout_constraintTop_toBottomOf="@id/cashInput"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oxanium_regular"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Display the current total cash -->
+    <TextView
+        android:id="@+id/totalCashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Total Cash: R0.00"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oxanium_regular"
+        app:layout_constraintTop_toBottomOf="@id/addCashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title for Feedback Form -->
+        <TextView
+            android:id="@+id/idTVFeedbackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Feedback"
+            android:fontFamily="@font/oxanium_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- EditText for user feedback -->
+        <EditText
+            android:id="@+id/idETFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVFeedbackTitle"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Write your feedback here..."
+            android:background="@drawable/edit_text_background"
+            android:padding="10dp"
+            android:fontFamily="@font/oxanium_regular"
+            android:textColor="@color/black"
+            android:lines="5"
+            android:gravity="top|start"/>
+
+        <!-- Button for sending feedback -->
+        <Button
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idETFeedback"
+            android:layout_margin="10dp"
+            android:text="Send to Developers"
+            android:textAllCaps="false"
+            android:fontFamily="@font/oxanium_bold"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

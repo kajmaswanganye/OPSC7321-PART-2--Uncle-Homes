@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/glossy_green">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Edit Information"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="@font/oxanium_extra_bold"
+            android:textAlignment="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Form for Editing Information -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Full Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"/>
+
+            <EditText
+                android:id="@+id/editFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:fontFamily="@font/oxanium_regular"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular"/>
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="phone"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Certifications/Licenses -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Certifications/Licenses"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <EditText
+                android:id="@+id/editCertifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Certifications/Licenses"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Service Area -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Service Area"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <EditText
+                android:id="@+id/editServiceArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Service Area"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Availability -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Availability"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <EditText
+                android:id="@+id/editAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Availability"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Pricing Structure -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pricing Structure"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <EditText
+                android:id="@+id/editPricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Pricing Structure"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:fontFamily="@font/oxanium_regular" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmitEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:text="Submit"
+                android:fontFamily="@font/oxanium_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
